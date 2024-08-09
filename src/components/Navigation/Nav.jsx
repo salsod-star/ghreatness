@@ -1,20 +1,17 @@
 import Styles from "./nav.module.css";
 
 function Nav({ handleSetReftType }) {
+  function handleScrollNavigation(e) {
+    if (e.target.type === "button") {
+      const refType = e.target.getAttribute("data-scroll-target");
+      handleSetReftType(refType);
+      console.log(refType);
+    }
+  }
   return (
     <nav className={Styles.container}>
-      <span>Greatness</span>
-      <ul
-        className={Styles.nav}
-        onClick={(e) => {
-          //   const targetEl = document.getElementById(e.button.getAttributes("id"));
-          if (e.target.type === "button") {
-            const refType = e.target.getAttribute("data-scroll-target");
-            handleSetReftType(refType);
-            console.log(refType);
-          }
-        }}
-      >
+      <span className={Styles.logo}>Greatness</span>
+      <ul className={Styles.nav} onClick={handleScrollNavigation}>
         <li>
           <button type="button" data-scroll-target="home">
             Home

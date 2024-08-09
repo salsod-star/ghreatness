@@ -1,0 +1,46 @@
+.schools_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 100px;
+  /* margin-bottom: 50px; */
+}
+
+.scroller_container {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  -webkit-mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
+  mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
+}
+
+.scroller_container:hover .scroller {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.scroller {
+  display: flex;
+  align-items: center;
+  /* gap: 30px; */
+
+  animation: slide 12s infinite linear;
+  backface-visibility: hidden;
+}
+
+.scroller img {
+  height: 80px;
+  width: auto;
+  margin: 0 30px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(calc(-100% + 1px));
+  }
+}

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "./components/Navigation/Nav";
 import {
   About,
@@ -11,6 +11,8 @@ import {
   Hero,
   News,
 } from "./sections/HomePageSections";
+import Schools from "./components/slider/Schools";
+import Statistics from "./components/stat/Statistics";
 
 function Home() {
   const [refType, setRefType] = useState("");
@@ -30,8 +32,10 @@ function Home() {
         <Hero />
       </Header>
       <main>
+        <Schools />
         <Entertainment />
         <Education />
+        <Statistics />
         <Gaming />
         <News />
         <About />

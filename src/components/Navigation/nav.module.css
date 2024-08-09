@@ -2,9 +2,25 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .nav {
   display: flex;
   gap: 10px;
+}
+
+.nav button {
+  background: none;
+  outline: none;
+  transition: all 0.2s ease-in;
+}
+
+.nav button:hover {
+  color: #12a37f;
 }

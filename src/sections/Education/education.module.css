@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.education_title_box {
+  flex: 0 1 40%;
+}
+
+.education_category_box {
+  align-self: flex-end;
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.education_category_box span {
+  background-color: #1a1a1a;
+  padding: 5px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.education_category_box1,
+.education_category_box2 {
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+}
+
+.education_category_box2 {
+  padding-right: 30px;
+}
+
+.education_small_title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  color: #12a37f;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.education_title {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.education_header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.grid_container,
+.grid_container__smallWidth {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.grid_container__smallWidth {
+  width: 70%;
+}
+
+.grid_item {
+  background-color: #0f172a;
+  border-radius: 8px;
+  background-clip: border-box;
+}
+
+.grid_item_header {
+  position: relative;
+}
+
+.grid_item_price {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  background: #036b51;
+}
+
+.grid_item_category {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  position: absolute;
+  bottom: -8px;
+  left: 10px;
+  padding: 3px 15px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #d83333, #f041ff);
+}
+
+.grid_item img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content-visibility: auto;
+}
+
+.grid_item_content {
+  padding: 30px 10px 15px;
+}
+
+.grid_item_text {
+  margin: 10px 0;
+}
+
+.grid_item_cta_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid_item_cta_box a {
+  color: aquamarine;
+}

@@ -1,0 +1,99 @@
+.hero_container {
+  max-width: 1000px;
+  margin: auto;
+  /* height: calc(100vh - 100px); */
+  padding-top: 100px;
+}
+
+.hero_title {
+  margin-top: 30px;
+  font-size: 64px;
+}
+
+.hero_title span {
+  background: linear-gradient(to right, rgb(35, 49, 128), rgb(155, 201, 70));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  text-align: center;
+}
+
+.hero_text {
+  margin: 24px 0;
+}
+
+.pill_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pill {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding-right: 10px;
+  color: rgb(173, 167, 167);
+}
+
+.small_bg_gradient {
+  position: relative;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #d83333, #f041ff);
+  color: white;
+}
+
+.small_bg_gradient::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0036be80;
+  z-index: -1;
+}
+
+.person_svg {
+  color: white;
+}
+
+.hero_btn_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.hero_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.hero_btn_connect {
+  background-color: rgb(44, 44, 119);
+}
+
+.hero_btn_fun {
+  border: 1px solid white;
+}
